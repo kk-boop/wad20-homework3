@@ -1,0 +1,29 @@
+{
+  "name": "wad20-homework2-solution",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kk-boop/wad20-homework2-solution.git"
+  },
+  "author": "refer github",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kk-boop/wad20-homework2-solution/issues"
+  },
+  "homepage": "https://github.com/kk-boop/wad20-homework2-solution#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0"
+  }
+}
