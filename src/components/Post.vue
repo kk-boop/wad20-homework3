@@ -20,7 +20,8 @@
     </div>
 
     <div class="post-actions">
-      <button type="button" class="like-button"></button>
+      <button @click="liked = false" v-if="liked" class="like-button liked">{{ post.likes }}</button>
+      <button @click="liked = true" v-if="!liked" class="like-button">{{ post.likes }}</button>
     </div>
   </div>
 </template>
@@ -35,6 +36,7 @@ import { Options, Vue } from 'vue-class-component'
 })
 export default class Post extends Vue {
   post!: any
+  liked=false
 }
 </script>
 
@@ -123,6 +125,7 @@ li .post-image img, video {
   line-height: 10px;
   text-align: left;
   border: none;
+  font-weight: bold;
 }
 
 .like-button.liked {
