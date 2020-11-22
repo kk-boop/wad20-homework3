@@ -6,6 +6,11 @@
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
     </p>
+    <ul>
+      <li v-for='post in posts' :key="post.id" >
+        <h3>{{ post.id }} {{ post.text }}</h3>
+      </li>
+    </ul>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
@@ -30,6 +35,7 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
   </div>
 </template>
 
@@ -39,6 +45,14 @@ import { Options, Vue } from 'vue-class-component'
 @Options({
   props: {
     msg: String
+  },
+  computed: {
+    posts() {
+      return this.$store.state.posts
+    }
+  },
+  mounted() {
+    this.$store.dispatch('getPosts')
   }
 })
 export default class HelloWorld extends Vue {
