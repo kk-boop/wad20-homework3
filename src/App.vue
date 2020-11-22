@@ -46,19 +46,15 @@ export default class App extends Vue {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab",sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0277bd;
   height: 100%;
  // text-align: center;
   color: #2c3e50;
-}
-
-* {
-  font-family: 'Roboto Slab', serif;
-  outline: none;
 }
 
 html, body {
