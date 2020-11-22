@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #0277bd;
-  text-align: center;
+ // text-align: center;
   color: #2c3e50;
 }
 
