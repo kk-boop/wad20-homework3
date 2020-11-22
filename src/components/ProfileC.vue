@@ -30,10 +30,7 @@ export default class ProfileC extends Vue {
 </script>
 
 <style scoped>
-* {
-  font-family: 'Roboto Slab', serif;
-  outline: none;
-}
+
 button {
   ;
 }
