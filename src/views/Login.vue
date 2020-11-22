@@ -22,7 +22,7 @@
             <input type="password" name="password" placeholder="Password">
           </div>
           <div>
-            <button class="button" type="submit" name="login">Log In</button>
+            <button class="button" type="submit" name="login" @click="$router.push('/')">Log In</button>
           </div>
           <div>
             <small>

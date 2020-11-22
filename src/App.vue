@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header v-if="$route.name !== 'Login'">
     <nav>
       <div class="logo-container">
         <img src="@/assets/logo.png" alt="postIt">
