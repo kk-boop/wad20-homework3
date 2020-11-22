@@ -14,7 +14,7 @@
           <span id="user-email">{{ $store.state.userInfo.email }}</span>
           <span class="separator"></span>
           <span>
-            <router-link to="/browse">Browse</router-link> |
+            <router-link to="/browse">Browse</router-link>
           </span>
           <span class="separator"></span>
           <span>
