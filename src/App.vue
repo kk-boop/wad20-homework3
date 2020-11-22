@@ -10,7 +10,7 @@
       <div class="avatar-container">
         <img class="avatar" @click="showDropdown = !showDropdown"  v-bind:src="$store.state.userInfo.avatar">
         <div v-if="showDropdown" class="drop-down-container">
-          <span id="user-name">{{ $store.state.userInfo.firstname + " " + $store.state.userInfo.lastname }}</span>
+          <span id="user-name">{{ fullName }}</span>
           <span id="user-email">{{ $store.state.userInfo.email }}</span>
           <span class="separator"></span>
           <span>
@@ -33,6 +33,11 @@ import { Options, Vue } from 'vue-class-component'
 @Options({
   mounted() {
     this.$store.dispatch('getUserInfo')
+  },
+  computed: {
+    fullName() {
+      return this.$store.state.userInfo.firstname + ' ' + this.$store.state.userInfo.lastname
+    }
   }
 })
 export default class App extends Vue {
