@@ -4,7 +4,23 @@ import { Store } from 'vuex'
 declare module '@vue/runtime-core' {
   // declare your own store states
   interface State {
-    posts: any[]
+    posts: Post[]
+  }
+
+  interface Post {
+    id: number,
+    createTime: string,
+    text?: string,
+    author: {
+      firstname: string,
+      lastname: string,
+      avatar: string
+    },
+    media?: {
+      type: "video" | "image",
+      url: string
+    }
+    likes: string
   }
 
   // provide typings for `this.$store`
