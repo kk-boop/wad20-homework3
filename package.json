@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/kk-boop/wad20-homework2-solution#readme",
   "dependencies": {
+    "@vue/cli": "^4.5.9",
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
+    "vue": "^3.0.2",
     "vue-class-component": "^8.0.0-0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
