@@ -24,8 +24,6 @@
       </div>
      </nav>
   </header>
-  <div id="nav" v-if="$route.name !== 'About'">
-  </div>
   <router-view/>
 </template>
 
