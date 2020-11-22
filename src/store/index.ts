@@ -35,9 +35,9 @@ export default createStore({
     },
     getUserInfo({ commit }) {
       axios.get('https://private-517bb-wad20postit.apiary-mock.com/users/1')
-      .then(response => {
-        commit('SET_USERINFO', response.data)
-      })
+        .then(response => {
+          commit('SET_USERINFO', response.data)
+        })
     }
   },
   modules: {
